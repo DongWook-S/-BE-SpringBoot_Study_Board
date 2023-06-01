@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>게시물 작성 폼</title>
+</head>
+<body>
+    <form action="/board/writePro" method="post">
+        <div class="layout">
+            <table>
+                <tr>
+                    <td>제목</td>
+                    <td><input name="title" type="text" style="width:170px;"></td>
+                </tr>
+                <tr>
+                    <td>내용</td>
+                    <td>
+                        <textarea name="content" style="height:80px; width:170px;"></textarea>
+                    </td>
+                </tr>
+            </table>
+            <button type="submit" style="height:40px; width:170px; margin-left:38px">작성</button>
+        </div>
+    </form>
+</body>
+</html>

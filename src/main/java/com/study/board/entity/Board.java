@@ -9,13 +9,26 @@ import lombok.Data;
 @Entity
 public class Board {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
+    public String getFilename() {
+        return filename;
+    }
 
-    private String title;
+    public void setFilename(String filename) {
+        this.filename = filename;
+    }
 
-    private String content;
+    public String getFilepath() {
+        return filepath;
+    }
+
+    public void setFilepath(String filepath) {
+        this.filepath = filepath;
+    }
+
+    private String filename;
+
+    private String filepath;
+
     public Integer getId() {
         return id;
     }
@@ -31,6 +44,14 @@ public class Board {
     public void setTitle(String title) {
         this.title = title;
     }
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer id;
+
+    private String title;
+
+    private String content;
 
     public String getContent() {
         return content;

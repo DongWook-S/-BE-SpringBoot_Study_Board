@@ -5,7 +5,7 @@
     <title>게시물 작성 폼</title>
 </head>
 <body>
-    <form action="/board/writePro" method="post">
+    <form action="/board/writePro" method="post" enctype="multipart/form-data">
         <div class="layout">
             <table>
                 <tr>
@@ -16,6 +16,12 @@
                     <td>내용</td>
                     <td>
                         <textarea name="content" style="height:80px; width:170px;"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="file" name="file" style="margin: 15px 0px" />
                     </td>
                 </tr>
             </table>
